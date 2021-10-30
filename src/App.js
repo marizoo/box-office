@@ -6,19 +6,16 @@ import Starred from './pages/Starred';
 
 export default function App() {
   return (
-    <div>
-      <Navs />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
 
-        <Route exact path="/starred">
-          <Starred />
-        </Route>
+      <Route exact path="/starred">
+        <Starred />
+      </Route>
 
-        <Route>This is 404 page</Route>
-      </Switch>
-    </div>
+      <Route>This is 404 page</Route>
+    </Switch>
   );
 }
