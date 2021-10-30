@@ -1,9 +1,18 @@
-import React from "react";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div>
-      <h3>ds</h3>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        This is home page
+      </Route>
+
+      <Route exact path="/starred">
+        This is starred
+      </Route>
+
+      <Route>This is 404 page</Route>
+    </Switch>
   );
 }
